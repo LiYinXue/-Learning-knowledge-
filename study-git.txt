@@ -1,0 +1,17 @@
+1.查看本地分支
+    git branch * '所在分支/例如master'
+2.查看远程分支
+    git branch -r 
+3.查看所有分支
+    git branch -a
+4.本地创建新的分支
+    git branch '分支名称'
+5.切换到新的分支
+    git checkout '分支名'
+    git checkout -b '分支名' // 创建分支并切换
+6.将分支推送到gitHub上
+    git push origin '分支名'
+7.删除本地分支
+    git branch -d '分支名'
+8.删除远程分支
+    git push origin :[分支名]
