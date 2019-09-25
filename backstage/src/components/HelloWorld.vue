@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <el-button>121212</el-button>
+    <el-input></el-input>
     <h2>Essential Links</h2>
     <ul>
       <li>
