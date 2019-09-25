@@ -23,7 +23,6 @@
         </el-container>
     </el-container>
 </template>
-
 <style>
 .el-header {
   background-color: #c1cbd8;
@@ -39,6 +38,8 @@
 <script>
 export default {
   name: 'Home',
-  
+  cread:{
+
+  }
 }
 </script>
