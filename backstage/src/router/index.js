@@ -8,7 +8,9 @@ import Botany from '@/view/home/botany'
 Vue.use(Router)
 
 export default new Router({
+  // mode: 'history',
   routes: [
+    {path:'/',redirect:'/login'},
     {
       path: '/login',
       name: 'Login',
@@ -20,12 +22,12 @@ export default new Router({
       component: Home,
       children:[
         {
-          path: 'botany',
+          path: '/botany',
           name: 'Botany',
           component: Botany
         },
         {
-          path: 'flower',
+          path: '/flower',
           name: 'Flower',
           component: Flower
         },
