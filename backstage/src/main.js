@@ -6,7 +6,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 import { Header, Aside, Container, Main, Menu, MenuItem, Form, FormItem, Input, Button } from 'element-ui'
 import router from './router'
 import '../static/iconfont/iconfont.css'
-import '@/mock/mock.js'
+import '@/mock/index.js'
+import axios from 'axios'
+Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
 Vue.use(Header).use(Aside).use(Container).use(Main).use(Menu).use(MenuItem).use(Form).use(FormItem).use(Input).use(Button)

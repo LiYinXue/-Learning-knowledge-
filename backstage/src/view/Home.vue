@@ -7,12 +7,12 @@
         <el-container>
             <!-- 页面左侧菜单 -->
             <el-aside width="200px">
-                <el-menu router>
+                <el-menu router @select="selectIndex">
                     <!-- 开启菜单中的router=true之后，点击菜单会把index作为路由跳转路径 -->
-                    <el-menu-item index="botany">
+                    <el-menu-item index="/botany">
                         <i class="el-icon-setting"></i>绿植管理
                     </el-menu-item>
-                    <el-menu-item index="flower">
+                    <el-menu-item index="/flower">
                         <i class="el-icon-setting"></i>鲜花管理
                     </el-menu-item>
                 </el-menu>
@@ -38,8 +38,15 @@
 <script>
 export default {
   name: 'Home',
-  cread:{
-
+  data(){
+      return {
+          
+      }
+  },
+  methods:{
+      selectIndex(index, indexPath){
+          console.log(index,indexPath)
+      }
   }
 }
 </script>
