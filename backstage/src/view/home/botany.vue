@@ -23,11 +23,11 @@ export default {
   },
   methods:{
     getUserInfo(){
-     api.JH_news('/botany/index', 'type=top&key=123456')
-      .then(res => {
-        console.log(res);
-        this.tableData = res.list;
-      });
+    //  api.JH_news('/botany/index', 'type=top&key=123456')
+    //   .then(res => {
+    //     console.log(res);
+    //     this.tableData = res.list;
+    //   });
     }
   }
 }

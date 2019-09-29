@@ -23,11 +23,11 @@ export default {
   },
   methods:{
     getUserInfo(){
-     api.JH_news('/news/index', 'type=top&key=123456')
-      .then(res => {
-        console.log(res);
-        this.tableData = res.articles;
-      });
+    //  api.JH_news('/news/index', 'type=top&key=123456')
+    //   .then(res => {
+    //     console.log(res);
+    //     this.tableData = res.articles;
+    //   });
     }
   }
 }
