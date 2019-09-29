@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="flower">
         <el-table :data="tableData" border style="width: 100%">
             <el-table-column type="index" label="序号" align="center"></el-table-column>
             <el-table-column prop="author_name" label="名称" align="center"></el-table-column>
@@ -23,11 +23,11 @@ export default {
   },
   methods:{
     getUserInfo(){
-    //  api.JH_news('/news/index', 'type=top&key=123456')
-    //   .then(res => {
-    //     console.log(res);
-    //     this.tableData = res.articles;
-    //   });
+     api.JH_news('/news/index', 'type=top&key=123456')
+      .then(res => {
+        console.log(res);
+        this.tableData = res.articles;
+      });
     }
   }
 }

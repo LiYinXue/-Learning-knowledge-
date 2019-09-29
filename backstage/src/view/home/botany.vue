@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="botany">
         <el-table :data="tableData" border style="width: 100%">
             <el-table-column type="index" label="序号" align="center"></el-table-column>
             <el-table-column prop="name" label="名称" align="center"></el-table-column>
@@ -23,11 +23,11 @@ export default {
   },
   methods:{
     getUserInfo(){
-    //  api.JH_news('/botany/index', 'type=top&key=123456')
-    //   .then(res => {
-    //     console.log(res);
-    //     this.tableData = res.list;
-    //   });
+     api.JH_news('/botany/index', 'type=top&key=123456')
+      .then(res => {
+        console.log(res);
+        this.tableData = res.list;
+      });
     }
   }
 }
