@@ -7,31 +7,6 @@
 <script>
 export default {
   name: 'App',
-  data(){
-    return {
-      userInfo:{}
-    }
-  },
-  created(){
-    this.getUserInfo();
-  },
-  methods:{
-    getUserInfo(){
-     //请求'/user/userinfo'接口
-     console.log(this.$http,'////')
-      this.$http.get('/user/userinfo')
-      .then(({data})=>{
-        //打印mock data
-        console.log(data);
-        if(data.error === 0){
-          this.userInfo = data.data;
-        }else{
-          this.userInfo = {};
-        }
-        
-      });
-    }
-  }
 }
 </script>
 
